@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>speaker triangle calculator</title>
+  <link rel="stylesheet" href="triangle.css" type="text/css">
+</head>
+
+<body>
+
+This is merely a trivial personal calculator
+for determining measures when positioning speakers
+that I found myself using occasionally.<br>
+There are more advanced calculators available on the Web
+(check them out, those are based on theory and all that, pretty cool).
+
+<hr>
+
+<form>
+  <table>
+    <tr class="e">
+      <td class="name">e</td>
+      <td class="input"><input type="text" id="e"></td>
+      <td class="comment">length of the triangle's edges</td>
+    </tr>
+    <tr class="w">
+      <td class="name">w</td>
+      <td class="input"><input id="w"></td>
+      <td class="comment">speaker front – back wall</td>
+    </tr>
+    <tr class="sy">
+      <td class="name">s<sub>y</sub></td>
+      <td class="input"><input type="text" id="sy"></td>
+      <td class="comment">speaker stand center – speaker front</td>
+    </tr>
+    <tr class="e1">
+      <td class="name">e'</td>
+      <td class="input"><span id="e1">???</span></td>
+      <td class="comment">distance stand centers</td>
+    </tr>
+    <tr class="d">
+      <td class="name">d</td>
+      <td class="input"><span id="d">???</span></td>
+      <td class="comment">altitude: listener – speaker front</td>
+    </tr>
+    <tr class="d1">
+      <td class="name">d'</td>
+      <td class="input"><span id="d1">???</span></td>
+      <td class="comment">altitude: listener – stand center</td>
+    </tr>
+    <tr class="d2">
+      <td class="name">d"</td>
+      <td class="input"><span id="d2">???</span></td>
+      <td class="comment">listener – back wall</td>
+    </tr>
+    <tr class="w1">
+      <td class="name">w'</td>
+      <td class="input"><span id="w1">???</span></td>
+      <td class="comment">stand center – back wall</td>
+    </tr>
+    <tr class="oy">
+      <td class="name">o<sub>y</sub></td>
+      <td class="input"><span id="oy">???</span></td>
+      <td class="comment">y-offset speaker stand center – rotated speaker front</td>
+    </tr>
+    <tr class="ox">
+      <td class="name">o<sub>x</sub></td>
+      <td class="input"><span id="ox">???</span></td>
+      <td class="comment">x-offset speaker stand center – rotated speaker front</td>
+    </tr>
+  </table>
+</form>
+
+<script type="text/javascript" src="triangle.js"></script>
+
+<img src="triangle-xs.jpg" alt="drawing of triangle showing variables">
+
+</body>
+
+</html>

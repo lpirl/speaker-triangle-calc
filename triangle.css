@@ -1,0 +1,11 @@
+body, input {
+  font-family: monospace;
+}
+
+span {
+  float: right;
+}
+
+td {
+  padding: .1em .5em;
+}
