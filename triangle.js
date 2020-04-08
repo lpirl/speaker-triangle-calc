@@ -1,7 +1,9 @@
 // constants
 inputs = document.getElementsByTagName("input");
-rad1 = 180 / Math.PI;
+rad1 = Math.PI / 180;
+rad30 = 30 * rad1;
 rad60 = 60 * rad1;
+sin30 = Math.sin(rad30);
 sin60 = Math.sin(rad60);
 cos60 = Math.cos(rad60);
 
@@ -40,6 +42,7 @@ function main(){
   values.d2 = values.d + values.w;
   values.e1 = values.e + 2 * values.ox;
   values.w1 = values.w - values.oy;
+  values.b1 = values.b * sin30;
 
   write_all(values);
 }
