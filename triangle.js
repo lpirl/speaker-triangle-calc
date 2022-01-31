@@ -1,7 +1,9 @@
 // constants
 inputs = document.getElementsByTagName("input");
 rad1 = 180 / Math.PI;
+rad30 = 60 * rad1;
 rad60 = 60 * rad1;
+sin30 = Math.sin(rad30);
 sin60 = Math.sin(rad60);
 cos60 = Math.cos(rad60);
 
@@ -11,6 +13,7 @@ function init(){
     input.onkeyup = main;
     input.onpaste = main;
   }
+  main();
 }
 init();
 
@@ -26,18 +29,21 @@ function read_inputs(){
 function write_all(values){
   for (var property in values) {
     if (!values.hasOwnProperty(property)) continue;
-    document.getElementById(property).innerHTML = values[property].toFixed(4);
+    fixedVal = values[property].toFixed(4);
+    document.getElementById(property).innerHTML =
+      isNaN(fixedVal) ? "???" : fixedVal;
   }
 }
 
 function main(){
   var values = read_inputs();
 
+  values.d = sin60 * values.e;
+  values.b1 = values.b * sin30;
+  values.d2 = values.d + values.w;
   values.ox = cos60 * values.sy;
   values.oy = sin60 * values.sy;
-  values.d = sin60 * values.e;
   values.d1 = values.d + values.oy;
-  values.d2 = values.d + values.w;
   values.e1 = values.e + 2 * values.ox;
   values.w1 = values.w - values.oy;
 

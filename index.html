@@ -10,11 +10,10 @@
 
 <body>
 
-This is merely a trivial personal calculator
-for determining measures when positioning speakers
-that I found myself using occasionally.<br>
-There are more advanced calculators available on the Web
-(check them out, those are based on theory and all that, pretty cool).
+This is merely a trivial personal calculator for determining measures
+when positioning speakers that I found myself using occasionally.<br>
+There are more advanced and theory-based calculators available on the
+Web, check them out.
 
 <hr>
 
@@ -26,10 +25,30 @@ There are more advanced calculators available on the Web
       <td class="comment">length of the triangle's edges
         (near/mid/far: 1–2/2–3/3–4 meters)</td>
     </tr>
+    <tr class="d">
+      <td class="name">d</td>
+      <td class="input"><span id="d">???</span></td>
+      <td class="comment">altitude: listener – speaker front</td>
+    </tr>
+    <tr class="b">
+      <td class="name">b</td>
+      <td class="input"><input type="text" id="b"></td>
+      <td class="comment">speaker enclosure width</td>
+    </tr>
+    <tr class="b1">
+      <td class="name">b'</td>
+      <td class="input"><span id="b1">???</span></td>
+      <td class="comment">difference speaker enclosure corners – back wall</td>
+    </tr>
     <tr class="w">
       <td class="name">w</td>
       <td class="input"><input id="w"></td>
       <td class="comment">speaker front – back wall</td>
+    </tr>
+    <tr class="d2">
+      <td class="name">d"</td>
+      <td class="input"><span id="d2">???</span></td>
+      <td class="comment">listener – back wall</td>
     </tr>
     <tr class="sy">
       <td class="name">s<sub>y</sub></td>
@@ -41,20 +60,10 @@ There are more advanced calculators available on the Web
       <td class="input"><span id="e1">???</span></td>
       <td class="comment">distance stand centers</td>
     </tr>
-    <tr class="d">
-      <td class="name">d</td>
-      <td class="input"><span id="d">???</span></td>
-      <td class="comment">altitude: listener – speaker front</td>
-    </tr>
     <tr class="d1">
       <td class="name">d'</td>
       <td class="input"><span id="d1">???</span></td>
       <td class="comment">altitude: listener – stand center</td>
-    </tr>
-    <tr class="d2">
-      <td class="name">d"</td>
-      <td class="input"><span id="d2">???</span></td>
-      <td class="comment">listener – back wall</td>
     </tr>
     <tr class="w1">
       <td class="name">w'</td>
@@ -76,7 +85,8 @@ There are more advanced calculators available on the Web
 
 <script type="text/javascript" src="triangle.js"></script>
 
-<img src="scan.svg" alt="drawing of triangle showing variables">
+<img src="triangle.svg" width="100%"
+     alt="drawing of triangle showing variables">
 
 </body>
 
